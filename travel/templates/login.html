@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <style>
+    .form{padding: 16px;background-color:#9fd9c0;width:40%;margin: 0 auto;}
+     input[type=text],input[type=email],input[type=password]{width: 98%;padding: 9px;margin: 2px 0 22px 0;
+     border:none;background: #f0f8ff;}
+     label{font-size:15px;padding:2;font-family:cursive;}
+     input[type=submit] {background-color: #04AA6D;color: white;padding: 14px 20px;cursor: pointer;font-family:cursive;}
+  </style>
+</head>
+<body>
+<div class="form">
+<form action="login" method="post">
+  {% csrf_token %}
+   <input type="text" name="username" placeholder="enter username"/><br>
+   <input type="password" name="password" placeholder="enter password"/><br>
+  <input type="submit">
+</form>
+</div>
+
+</body>
+</html>
